@@ -3,8 +3,9 @@ libraries{
     sonarqube
     ansible
     splunk{
-        afterSteps = [ "static_code_analysis", "unit_test"  ]
+        afterSteps = [ "static_code_analysis", "unit_test" ]
     }
+    git
 }
 
 stages{
@@ -37,3 +38,4 @@ steps{
         command = "mvn -v"
     }
 }
+
