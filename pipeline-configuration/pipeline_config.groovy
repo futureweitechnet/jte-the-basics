@@ -2,7 +2,9 @@ libraries{
     maven
     sonarqube
     ansible
-    splunk
+    splunk{
+        afterSteps = [ "static_code_analysis", "unit_test"  ]
+    }
 }
 
 stages{
