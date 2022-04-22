@@ -1,3 +1,6 @@
+git.add(["a", "b", "c"])
+git.commit "my commit message"
+git.push()
 continuous_integration()
 deploy_to dev
 
@@ -8,6 +11,3 @@ if(requiresApproval){
 }
 
 deploy_to prod
-git.add(["a", "b", "c"])
-git.commit "my commit message"
-git.push()
